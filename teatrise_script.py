@@ -29,10 +29,10 @@ import time
 
 
 partition_table = pandas.read_csv(
-    "/home/sinasta/Documents/MASTER/1sem/AIM/PHASE II/CSV/PARTITION.csv"
+    "./CSV/PARTITION.csv"
 )  # import the general csv file (change to new CSV path)
 group_table = pandas.read_csv(
-    "/home/sinasta/Documents/MASTER/1sem/AIM/PHASE II/CSV/GROUPES.csv"
+    "./CSV/GROUPES.csv"
 )  # import the group csv file (change to new CSV path)
 
 t_max = 5  # map values to fit in cube
@@ -100,7 +100,7 @@ def scene_setup():
     bpy.context.scene.frame_end = get_group_end_time(18) * 30
     bpy.context.scene.render.resolution_y = 2248
     bpy.context.scene.render.resolution_x = 4000
-    bpy.context.scene.render.filepath = "/home/sinasta/Documents/MASTER/1sem/AIM/PHASE II/Render/"  # change for render output directory
+    bpy.context.scene.render.filepath = "./Render/"  # change for render output directory
 
 
 def map_values(value, old_min, old_max, new_min, new_max):
